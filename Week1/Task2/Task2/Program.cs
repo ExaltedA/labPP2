@@ -34,16 +34,16 @@ namespace Task2
             }
             this.name = consoleread[0];//assigning name
             this.id = consoleread[1];//assigning id
-            
-            bool success = Int32.TryParse(year, out x);
+            this.year = consoleread[2];//assigning year
+            bool success = Int32.TryParse(year, out x);//checking if year was written appropriately
            
             {
-                if (success)
+                if (success)// then year will be assigned to x and then write line
                 {
                     this.x = Convert.ToInt32(consoleread[2]);
                     Console.WriteLine(name + "'s id is " + id + " and he is currently " + (x + 1) + " course student.");
                 }
-                else
+                else//if not then warning and try again
                 {
                     Console.WriteLine("Write year using integers please!");
                     Student asd = new Student();                }
@@ -59,7 +59,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Student student = new Student();
+        Student student = new Student();//initializing student 
        /* Student he = new Student("Ivan", "asd8", 2);*/
         
     }
