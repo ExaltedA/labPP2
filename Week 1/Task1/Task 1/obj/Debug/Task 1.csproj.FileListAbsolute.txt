@@ -1,7 +1,0 @@
-C:\Users\Exalted\source\repos\Task 1\Task 1\bin\Debug\Task 1.exe.config
-C:\Users\Exalted\source\repos\Task 1\Task 1\bin\Debug\Task 1.exe
-C:\Users\Exalted\source\repos\Task 1\Task 1\bin\Debug\Task 1.pdb
-C:\Users\Exalted\source\repos\Task 1\Task 1\obj\Debug\Task 1.csprojAssemblyReference.cache
-C:\Users\Exalted\source\repos\Task 1\Task 1\obj\Debug\Task 1.csproj.CoreCompileInputs.cache
-C:\Users\Exalted\source\repos\Task 1\Task 1\obj\Debug\Task 1.exe
-C:\Users\Exalted\source\repos\Task 1\Task 1\obj\Debug\Task 1.pdb
