@@ -8,31 +8,33 @@ using Task2;
 namespace Task2
 {
     
-    class Student
+    class Student//creating Student class
     {
         public string name;
         public string id;
         public string year;
         public int x;
-        public Student(string name, string id, int x)
+      /* public Student(string name, string id, int x)
         {
             this.name = name;
             this.id = id;
             this.x = x;
-            
-        }
-        public Student()
+            Console.WriteLine(name + "'s id is " + id + " and he is currently " + (x + 1) + " course student.");
+
+            //Additional method if write student info in the code
+        }*/
+        public Student()//main method without any "flaws"
         {
-            string[] consoleread = Console.ReadLine().Split();
-            while (consoleread.Length != 3)
+            string[] consoleread = Console.ReadLine().Split();//reading from console
+            while (consoleread.Length != 3)//this loop would work until array size wouldn't be 3
             {
                 Console.WriteLine("Don't try any tricks!!" +
-                    " Write name, id and year of study one after another!");
-                consoleread = Console.ReadLine().Split();
+                    " Write name, id and year of study one after another!");//warning and instructions
+                consoleread = Console.ReadLine().Split();//repeating 
             }
-            this.name = consoleread[0];
-            this.id = consoleread[1];
-            this.year = consoleread[2];
+            this.name = consoleread[0];//assigning name
+            this.id = consoleread[1];//assigning id
+            
             bool success = Int32.TryParse(year, out x);
            
             {
@@ -58,6 +60,7 @@ class Program
     static void Main(string[] args)
     {
         Student student = new Student();
+       /* Student he = new Student("Ivan", "asd8", 2);*/
         
     }
 }
