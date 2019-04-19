@@ -11,32 +11,31 @@ namespace Task_3
     {
         static void A(string path, string level) // initializing function with 2 parameters(path and level(space bars))
         {
-            DirectoryInfo dir = new DirectoryInfo(path);//creating DirectoryInfo class dir with inserted path 
-            Console.WriteLine(level + dir.Name); // writing name of file of path given
-            level += "    ";// adding space bars to level if folders or in the beginning
-            FileSystemInfo[] inf = dir.GetFileSystemInfos();//creating filesysteminfo array type for saving info about dir
-            for (int i = 0; i < inf.Length; i++)
-            { 
-                
-                if (inf[i].GetType() == typeof(FileInfo))
+            DirectoryInfo dir = new DirectoryInfo(path);
+            Console.WriteLine(level + dir.Name);
+            level += "    ";
+            FileSystemInfo[] re = dir.GetFileSystemInfos();
+            for (int i = 0; i < re.Length; i++)
+            {
+                if (re[i].GetType() == typeof(FileInfo))
                 {
-                    Console.WriteLine(level + inf[i].Name);
+                    Console.WriteLine(level + re[i].Name);
                 }
                 else
                 {
-                    A(inf[i].FullName, level);
-
+                    A(re[i].FullName, level);
                 }
-
             }
-        }
-        static void Main(string[] args)
-        {
-            string path = @"C:\Users\Exalted\Music";
-            A(path,"");
 
-            Console.ReadKey();
         }
-    }
-}
+
+            static void Main(string[] args)
+            {
+                string path = @"C:\Users\Exalted\Music";
+                A(path, "");
+
+                Console.ReadKey();
+            }
+        } } 
+
 

@@ -20,8 +20,8 @@ namespace Task_1
         }
         static void Main(string[] args)
         {
-            int length;// how much numbers you are going to enter(length of the array)
-            length = Convert.ToInt32(Console.ReadLine());//assigning number to variable length (initially converting from string to int) 
+            int length;               // how much numbers you are going to enter(length of the array)
+            length = Convert.ToInt32(Console.ReadLine());    //assigning number to variable length (initially converting from string to int) 
             int[] a = new int[length]; //creating int array
             int num = 0, x;//initializing prime counter and variable which will help in loop
             string[] numbers = Console.ReadLine().Split();//reading numbers from the console and splitting them apart
@@ -36,7 +36,7 @@ namespace Task_1
                 Console.WriteLine(num);// returning counter to the console
                 for(int i = 0; i < num; ++i)// loop for returning prime numbers
                 {
-                    Console.Write(a[i].ToString() + " ");
+                    Console.Write(a[i] + " ");
                 }
             }
 
